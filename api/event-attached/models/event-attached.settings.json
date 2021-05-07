@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_attacheds",
+  "info": {
+    "name": "eventAttached"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idEvent": {
+      "model": "events"
+    },
+    "votesEvent": {
+      "type": "biginteger"
+    },
+    "attachedContent": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}

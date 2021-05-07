@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "events"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idUser": {
+      "model": "users"
+    },
+    "idGroup": {
+      "model": "groups"
+    },
+    "eventType": {
+      "type": "string"
+    },
+    "atitudeEvent": {
+      "type": "float"
+    },
+    "longitudeEvent": {
+      "type": "float"
+    }
+  }
+}

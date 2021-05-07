@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "name": "locations"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "idGroup": {
+      "model": "groups"
+    },
+    "idUser": {
+      "model": "users"
+    },
+    "latitudeLocation": {
+      "type": "float"
+    },
+    "longitudeLocation": {
+      "type": "float"
+    }
+  }
+}
